@@ -1,0 +1,3 @@
+namespace Default.Infrastructure;
+
+public interface IInfrastructureAssemblyMaker;

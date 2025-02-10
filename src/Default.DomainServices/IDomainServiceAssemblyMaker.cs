@@ -1,0 +1,3 @@
+namespace Default.DomainServices;
+
+public interface IDomainServiceAssemblyMaker;

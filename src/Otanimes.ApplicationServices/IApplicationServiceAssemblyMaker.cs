@@ -1,3 +1,0 @@
-namespace Otanimes.ApplicationServices;
-
-public interface IApplicationServiceAssemblyMaker;
