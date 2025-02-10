@@ -1,0 +1,3 @@
+namespace Otanimes.DomainServices;
+
+public interface IDomainServiceAssemblyMaker;

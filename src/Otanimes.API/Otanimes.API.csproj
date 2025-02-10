@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+      <UserSecretsId>60910239-a6dc-4a11-80a6-91dae6844cef</UserSecretsId>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Otanimes.ApplicationServices\Otanimes.ApplicationServices.csproj" />
+      <ProjectReference Include="..\Otanimes.Core\Otanimes.Core.csproj" />
+      <ProjectReference Include="..\Otanimes.IoC\Otanimes.IoC.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Otanimes.ApplicationServices\Otanimes.ApplicationServices.csproj" />
+      <ProjectReference Include="..\Otanimes.IoC\Otanimes.IoC.csproj" />
+    </ItemGroup>
+
+</Project>

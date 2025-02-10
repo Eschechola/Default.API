@@ -1,0 +1,3 @@
+namespace Otanimes.Infrastructure;
+
+public interface IInfrastructureAssemblyMaker;
