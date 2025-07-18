@@ -19,8 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Otanimes.ApplicationServices\Otanimes.ApplicationServices.csproj" />
-      <ProjectReference Include="..\Otanimes.IoC\Otanimes.IoC.csproj" />
+      <ProjectReference Include="..\Default.ApplicationServices\Default.ApplicationServices.csproj" />
+      <ProjectReference Include="..\Default.IoC\Default.IoC.csproj" />
     </ItemGroup>
 
 </Project>

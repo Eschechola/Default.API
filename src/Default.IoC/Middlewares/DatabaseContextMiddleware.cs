@@ -8,7 +8,7 @@ public static class DatabaseContextMiddleware
 {
     public static IServiceCollection AddDatabaseContext(this IServiceCollection services, string connectionString)
     {
-        services.AddDbContext<OtanimesContext>(options =>
+        services.AddDbContext<DefaultContext>(options =>
         {
             options.UseSqlServer(connectionString, 
                 providerOptions => providerOptions.EnableRetryOnFailure());

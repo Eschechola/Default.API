@@ -5,9 +5,9 @@ using Default.Infrastructure.Context;
 
 namespace Default.Infrastructure.Repositories;
 
-public class AddressRepository(OtanimesContext context) : Repository<Address>(context), IAddressRepository
+public class AddressRepository(DefaultContext context) : Repository<Address>(context), IAddressRepository
 {
-    private readonly OtanimesContext _context = context;
+    private readonly DefaultContext _context = context;
     
     public override IUnitOfWork UnitOfWork => _context;
 }

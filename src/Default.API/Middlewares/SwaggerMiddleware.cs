@@ -13,10 +13,10 @@ public static class SwaggerMiddleware
             sgo.CustomSchemaIds(type => type.ToString());
             sgo.SwaggerDoc("v1", new OpenApiInfo
             {
-                Title = "Otanimes API",
+                Title = "Default API",
                 Version = "V1",
-                Description = "Otanimes API build with .NET 9 from Otastore LTDA.",
-                TermsOfService = new Uri("https://otanimes.com.br/terms"),
+                Description = "Default API build with .NET 9 from Otastore LTDA.",
+                TermsOfService = new Uri("https://default.com.br/terms"),
                 License = new OpenApiLicense
                 {
                     Name = "MIT",
@@ -24,9 +24,9 @@ public static class SwaggerMiddleware
                 },
                 Contact = new OpenApiContact
                 {
-                    Name = "Otanimes Support",
+                    Name = "Default Support",
                     Email = "suporte@otastore.com.br",
-                    Url = new Uri("https://otanimes.com.br/contact")
+                    Url = new Uri("https://default.com.br/contact")
                 }
             });
             sgo.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

@@ -12,7 +12,7 @@ using FluentAssertions;
 using Moq;
 using Xunit;
 
-namespace Otanimes.Tests.DomainServices;
+namespace Default.Tests.DomainServices;
 
 public class UserDomainServiceTests
 {

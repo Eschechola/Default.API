@@ -9,7 +9,7 @@ public static class HealthCheckMiddleware
     {
         services.AddHealthChecks()
             .AddSqlServer(connectionString)
-            .AddDbContextCheck<OtanimesContext>();
+            .AddDbContextCheck<DefaultContext>();
 
         return services;
     }

@@ -6,9 +6,9 @@ using Default.Infrastructure.Context;
 
 namespace Default.Infrastructure.Repositories;
 
-public class UserRepository(OtanimesContext context) : Repository<User>(context), IUserRepository
+public class UserRepository(DefaultContext context) : Repository<User>(context), IUserRepository
 {
-    private readonly OtanimesContext _context = context;
+    private readonly DefaultContext _context = context;
     public override IUnitOfWork UnitOfWork => _context;
 
     public async Task<User> GetByUsernameAsync(string username)

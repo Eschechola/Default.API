@@ -12,7 +12,7 @@ using Default.Infrastructure.Context;
 
 namespace Default.Infrastructure.Repositories;
 
-public abstract class Repository<TEntity>(OtanimesContext context) : IRepository<TEntity>
+public abstract class Repository<TEntity>(DefaultContext context) : IRepository<TEntity>
     where TEntity : Entity
 {
     protected readonly DbSet<TEntity> _dbSet = context.Set<TEntity>();

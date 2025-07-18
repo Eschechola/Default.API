@@ -9,15 +9,15 @@ using Default.Infrastructure.Maps;
 
 namespace Default.Infrastructure.Context;
 
-public class OtanimesContext : DbContext, IUnitOfWork
+public class DefaultContext : DbContext, IUnitOfWork
 {
     #region Constructors
     
-    public OtanimesContext()
+    public DefaultContext()
     {
     }
     
-    public OtanimesContext(DbContextOptions<OtanimesContext> options) : base(options)
+    public DefaultContext(DbContextOptions<DefaultContext> options) : base(options)
     {
     }
     
@@ -30,7 +30,7 @@ public class OtanimesContext : DbContext, IUnitOfWork
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.HasDefaultSchema("otanimes");
+        modelBuilder.HasDefaultSchema("default");
         modelBuilder.ApplyConfiguration(new AddressMap());
         modelBuilder.ApplyConfiguration(new ContactMap());
         modelBuilder.ApplyConfiguration(new UserMap());
